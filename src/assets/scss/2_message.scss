@@ -1,0 +1,104 @@
+.message {
+    padding: 50px 0 0;
+}
+.message__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.message__left {
+}
+.message__imgWrapper {
+    max-width: 100%;
+}
+.message__img {
+    width: 100%;
+}
+.message__title {
+    @include h2Title;
+}
+.message__right {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.message__txt {
+    line-height: 20px;
+}
+.message__person {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        top: -15px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        bottom: -15px;
+    }
+}
+.message__personLeftRightWrap{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.message__personLeft {
+}
+.message__personLeftImg {
+    width: 120px;
+}
+.message__personRight {
+
+}
+.message__personName {
+    font-weight: 700;
+    span{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url("../img/mark2.png");
+            background-size: cover;
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+.message__personHesh {
+    color: $mainColor;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.message__personText {
+    line-height: 20px;
+}
+.message__personBottom {
+    display: flex;
+    gap: 20px;
+}
+.message__personBottomWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.message__personBottomImg {
+}
+.message__personBottomImgMessage {
+    width: 20px;
+}
+.message__personBottomNumber {
+}
