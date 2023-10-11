@@ -1,0 +1,94 @@
+.services {
+    padding: 50px 0 0;
+}
+.services__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.services__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.services__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(27px,5vw,40px);
+    padding: 0 10px;
+    span{
+        position: relative;
+        padding-left: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/strelka.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+}
+.services__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.services__ul {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li{
+        position: relative;
+        padding-left: 30px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/marker.png);
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.services__imgWrp {
+    max-width: 100%;
+}
+.services__img {
+    width: 150px
+}
+.services__text {
+    padding: 0 10px;
+    line-height: 20px;
+}
+.services__right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services__imgWrp2 {
+    max-width: 100%;
+}
+.services__img2 {
+    width: 100%;
+}
+.services__imgWrp3 {
+    display: flex;
+    gap: 20px;
+}
+.services__imgInner4 {
+    max-width: 100%;
+}
+.services__img4 {
+    width: 100%;
+}
