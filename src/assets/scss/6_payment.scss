@@ -1,0 +1,64 @@
+.payment {
+    padding: 50px 0 0;
+}
+.payment__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.payment__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.payment__subTitle {
+    text-align: center;
+    font-weight: 700;
+}
+.payment__wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.payment__inner {
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.payment__imgWrp {
+    max-width: 100px;
+}
+.payment__img {
+    width: 100px;
+}
+.payment__name {
+
+}
+.payment__Wrp2 {
+}
+.payment__imgWrp2 {
+    max-width: 100%;
+}
+.payment__img2 {
+    width: 100%;
+}
+.payment__title {
+    @include h2Title;
+}
+.payment__right {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.payment__txt {
+    line-height: 20px;
+}
+.payment__telLinkWrp {
+}
+.payment__telLink {
+    @include btn;
+}

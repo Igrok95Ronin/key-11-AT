@@ -45,7 +45,33 @@ $btnColorFixed : #177cc3;
 $mainColor : #177cc3;
 
 @mixin btn {
-
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: .3s;
+    span{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../icons/telephone-fill.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover {
+        color: #fff;
+        background-color: #1064a0;
+    }
 }
 @mixin h1Title {
     font-weight: 700;
